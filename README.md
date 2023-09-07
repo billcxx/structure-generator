@@ -1,5 +1,9 @@
 # Structure Generator
 
+## 文件夹结构
+- gui：用来放gui程序
+- python：用来放翻译后的python程序
+- legacy：用来放老的fortran程序
 ## 项目目标
 在windows上形成一个具有图形界面的，结构输入文件生成器
 
