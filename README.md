@@ -1,1 +1,2 @@
-# structure-generator
+# Structure Generator
+
