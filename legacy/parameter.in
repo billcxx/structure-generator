@@ -1,0 +1,60 @@
+# Example with Piezoelectricity
+
+# size
+SYSDIM = 	128	128	128  
+REALDIM = 	128.	128.	128.
+
+# system
+CHOICESYS =	3
+NPHASES = 	3
+CHOICESTRUCT = 	2
+
+# distribution
+OUTDIST = 	t
+CHOICEELABC = 	2
+#STRAIN = 	0.	0.	0.0	0.	0.	0. 
+STRESS = 	0.	0.	1E6	0.	0.	0. 
+ELECFIELD =	0.	0.	0. 
+
+# coefficients of phase 1
+PHASEID = 	1
+STIFFNESS =	1.69E9	0.87E9	0.87E9	0.	0.	0.
+			1.69E9	0.87E9	0.	0.	0.
+				1.69E9	0.	0.	0.
+					0.41E9	0.	0.
+						0.41E9	0.
+							0.41E9
+PERMITTIVITY = 	10	10	10	0.	0.	0.
+PIEZOELEC =	0.	0.	0.	0.	0.	0.
+		0.	0.	0.	0.	0.	0.
+		0.	0.	0.	0.	0.	0.
+
+# coefficients of phase 2
+PHASEID =       2
+STIFFNESS =     1.78E9   0.96E9  0.96E9  0.      0.      0.
+                         1.78E9  0.96E9  0.      0.      0.
+                                 1.78E9  0.      0.      0.
+                                        1.22E9   0.      0.
+                                                1.22E9   0.
+                                                        1.22E9
+PERMITTIVITY =  12      12      12      0.      0.      0.
+PIEZOELEC =     0.      0.      0.      0.      0.      0.
+                0.      0.      0.      0.      0.      0.
+                0.      0.      0.      0.      0.      0.
+
+# coefficients of phase 3
+PHASEID = 	3
+STIFFNESS =	178E9	96.4E9	96.4E9	0.	0.	0.
+			178E9	96.4E9	0.	0.	0.
+				178E9	0.	0.	0.
+					122E9	0.	0.
+						122E9	0.
+							122E9
+PERMITTIVITY = 	1200.	1200.	1200.	0.	0.	0.
+PIEZOELEC =	0.	0.	0.	0.	270E-12	0.
+		0.	0.	0.	270E-12	0.	0.
+		-79E-12	-79E-12	191E-12	0.	0.	0.
+
+
+
+
